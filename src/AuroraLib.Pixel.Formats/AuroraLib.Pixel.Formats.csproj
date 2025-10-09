@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <AssemblyTitle>AuroraLib.Pixel.Formats</AssemblyTitle>
+	  <TargetFrameworks>net10.0;net8.0;net6.0;netstandard2.0;net472;</TargetFrameworks>
+	  <ImplicitUsings>disable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <Title>AuroraLib.Pixel.Formats</Title>
+	  <Version>0.8.0</Version>
+	  <AssemblyVersion>$(Version)</AssemblyVersion>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+	  <Authors>Venomalia</Authors>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageProjectUrl>https://github.com/Venomalia/AuroraLib.Pixel.Formats</PackageProjectUrl>
+	  <Configurations>Debug;Release</Configurations>
+	  <NETFrameworks>|netstandard2.0|net481|net48|net472|NET471|NET47|NET462|NET461|</NETFrameworks>
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	  <PackageIcon>icon.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(NETFrameworks.Contains('|$(TargetFramework)|'))">
+	  <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AuroraLib.Core" Version="1.7.1" />
+    <PackageReference Include="AuroraLib.Core.Format" Version="1.0.4" />
+    <PackageReference Include="AuroraLib.Pixel" Version="1.5.2" />
+    <PackageReference Include="System.IO.Hashing" Version="10.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net10.0;net8.0;net472;</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AuroraLib.Pixel.BitmapExtension" Version="1.5.2" />
+    <PackageReference Include="AuroraLib.Pixel.ImageSharpExtension" Version="1.5.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
+    <PackageReference Include="MSTest" Version="4.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\AuroraLib.Pixel.Formats.Dolphin\AuroraLib.Pixel.Formats.Dolphin.csproj" />
+    <ProjectReference Include="..\src\AuroraLib.Pixel.Formats\AuroraLib.Pixel.Formats.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+</Project>

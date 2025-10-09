@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11626.88 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraLib.Pixel.Formats", "src\AuroraLib.Pixel.Formats\AuroraLib.Pixel.Formats.csproj", "{756B2201-FD6B-433E-99FD-6F8F0B4154D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelFormatTest", "PixelFormatTest\PixelFormatTest.csproj", "{09C354E9-2A18-40C7-BF29-3A1BDD932187}"
+	ProjectSection(ProjectDependencies) = postProject
+		{756B2201-FD6B-433E-99FD-6F8F0B4154D4} = {756B2201-FD6B-433E-99FD-6F8F0B4154D4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraLib.Pixel.Formats.Dolphin", "src\AuroraLib.Pixel.Formats.Dolphin\AuroraLib.Pixel.Formats.Dolphin.csproj", "{BBFDBAEC-516B-493C-9B02-EBBC0761E7BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{756B2201-FD6B-433E-99FD-6F8F0B4154D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756B2201-FD6B-433E-99FD-6F8F0B4154D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756B2201-FD6B-433E-99FD-6F8F0B4154D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756B2201-FD6B-433E-99FD-6F8F0B4154D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C354E9-2A18-40C7-BF29-3A1BDD932187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C354E9-2A18-40C7-BF29-3A1BDD932187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C354E9-2A18-40C7-BF29-3A1BDD932187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C354E9-2A18-40C7-BF29-3A1BDD932187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFDBAEC-516B-493C-9B02-EBBC0761E7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFDBAEC-516B-493C-9B02-EBBC0761E7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFDBAEC-516B-493C-9B02-EBBC0761E7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFDBAEC-516B-493C-9B02-EBBC0761E7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F10E57C1-9F8A-414B-B0CD-2A5C1A978B01}
+	EndGlobalSection
+EndGlobal
