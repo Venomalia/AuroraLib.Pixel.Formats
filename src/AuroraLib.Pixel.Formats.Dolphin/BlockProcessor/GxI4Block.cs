@@ -31,8 +31,8 @@ namespace AuroraLib.Pixel.Formats.Dolphin.BlockProcessor
                 for (int x = 0; x < BlockWidth; x += 2)
                 {
                     byte packed = source[i++];
-                    target[dst + x].I = (byte)(packed & 0b1111);
-                    target[dst + x + 1].I = (byte)(packed >> 4);
+                    target[dst + x].I = (byte)(packed >> 4);
+                    target[dst + x + 1].I = (byte)(packed & 0b1111);
                 }
             }
         }
@@ -46,8 +46,8 @@ namespace AuroraLib.Pixel.Formats.Dolphin.BlockProcessor
                 int src = y * stride;
                 for (int x = 0; x < BlockSize; x += 2)
                 {
-                    byte packed = (byte)(source[src + x].I & 0b1111);
-                    packed |= (byte)(source[src + x + 1].I << 4);
+                    byte packed = (byte)(source[src + x + 1].I & 0b1111);
+                    packed |= (byte)(source[src + x].I << 4);
                     target[i++] = packed;
                 }
             }
