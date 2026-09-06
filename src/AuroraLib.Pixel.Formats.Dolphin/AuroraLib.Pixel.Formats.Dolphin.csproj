@@ -6,10 +6,10 @@
 	  <ImplicitUsings>disable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
 	  <Title>AuroraLib.Pixel.Formats.Dolphin</Title>
-	  <Version>0.8.0</Version>
+	  <Version>0.8.1</Version>
 	  <AssemblyVersion>$(Version)</AssemblyVersion>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 	  <Authors>Venomalia</Authors>
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>

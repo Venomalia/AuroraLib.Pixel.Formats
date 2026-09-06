@@ -76,14 +76,14 @@ namespace PixelFormatTest
         [TestMethod]
         public void BC5U()
         {
-            using var image = TestImage.Create(new BC5UBlock<IA<byte>>());
+            using var image = TestImage.Create(new BC5UBlock());
             TestImage.TestFormat(new DDS(), image);
         }
 
         [TestMethod]
         public void BC5S()
         {
-            using var image = TestImage.Create(new BC5SBlock<IA<sbyte>>());
+            using var image = TestImage.Create(new BC5SBlock());
             TestImage.TestFormat(new DDS(), image);
         }
 

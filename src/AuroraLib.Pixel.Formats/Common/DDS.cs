@@ -57,10 +57,10 @@ namespace AuroraLib.Pixel.Formats.Common
                 FourCCType.DX10 => ReadImageDXT10(source, header),
                 FourCCType.BC4U => ReadTexture(source, header, new BC4UBlock<I<byte>>()),
                 FourCCType.BC4S => ReadTexture(source, header, new BC4SBlock<I<sbyte>>()),
-                FourCCType.BC5U => ReadTexture(source, header, new BC5UBlock<IA<byte>>()),
-                FourCCType.BC5S => ReadTexture(source, header, new BC5SBlock<IA<sbyte>>()),
+                FourCCType.BC5U => ReadTexture(source, header, new BC5UBlock()),
+                FourCCType.BC5S => ReadTexture(source, header, new BC5SBlock()),
                 FourCCType.ATI1 => ReadTexture(source, header, new BC4UBlock<I<byte>>()),
-                FourCCType.ATI2 => ReadTexture(source, header, new BC5UBlock<IA<byte>>()),
+                FourCCType.ATI2 => ReadTexture(source, header, new BC5UBlock()),
                 FourCCType.RGBG => ReadTexture<RGBA<byte>>(source, header),//!!!
                 FourCCType.GRGB => ReadTexture<ARGB<byte>>(source, header),//!!!
                 FourCCType.UYVY => ReadTexture(source, header, new UYVY<YUV3>()),
@@ -212,9 +212,9 @@ namespace AuroraLib.Pixel.Formats.Common
                 DXGIFormats.BC4_TYPELESS => ReadTexture(source, header, new BC4UBlock<I<byte>>()),
                 DXGIFormats.BC4_UNORM => ReadTexture(source, header, new BC4UBlock<I<byte>>()),
                 DXGIFormats.BC4_SNORM => ReadTexture(source, header, new BC4SBlock<I<sbyte>>()),
-                DXGIFormats.BC5_TYPELESS => ReadTexture(source, header, new BC5UBlock<IA<byte>>()),
-                DXGIFormats.BC5_UNORM => ReadTexture(source, header, new BC5UBlock<IA<byte>>()),
-                DXGIFormats.BC5_SNORM => ReadTexture(source, header, new BC5SBlock<IA<sbyte>>()),
+                DXGIFormats.BC5_TYPELESS => ReadTexture(source, header, new BC5UBlock()),
+                DXGIFormats.BC5_UNORM => ReadTexture(source, header, new BC5UBlock()),
+                DXGIFormats.BC5_SNORM => ReadTexture(source, header, new BC5SBlock()),
                 DXGIFormats.B5G6R5_UNORM => ReadTexture<RGB565>(source, header),
                 DXGIFormats.B5G5R5A1_UNORM => ReadTexture<ARGB1555>(source, header),
                 DXGIFormats.B8G8R8A8_UNORM => ReadTexture<BGRA<byte>>(source, header),
@@ -378,12 +378,12 @@ namespace AuroraLib.Pixel.Formats.Common
                     fourCCType = FourCCType.BC4U;
                     dXGIFormats = DXGIFormats.BC4_UNORM;
                 }
-                else if (blockImage.BlockFormat is BC5UBlock<IA<byte>>)
+                else if (blockImage.BlockFormat is BC5UBlock)
                 {
                     fourCCType = FourCCType.BC5U;
                     dXGIFormats = DXGIFormats.BC5_UNORM;
                 }
-                else if (blockImage.BlockFormat is BC5SBlock<IA<sbyte>>)
+                else if (blockImage.BlockFormat is BC5SBlock)
                 {
                     fourCCType = FourCCType.BC5S;
                     dXGIFormats = DXGIFormats.BC5_SNORM;
