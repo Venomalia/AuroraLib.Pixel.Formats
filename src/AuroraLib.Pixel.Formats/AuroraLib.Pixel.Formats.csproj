@@ -6,7 +6,7 @@
 	  <ImplicitUsings>disable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
 	  <Title>AuroraLib.Pixel.Formats</Title>
-	  <Version>0.8.1</Version>
+	  <Version>0.8.2</Version>
 	  <AssemblyVersion>$(Version)</AssemblyVersion>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
@@ -38,8 +38,8 @@
   <ItemGroup>
     <PackageReference Include="AuroraLib.Core" Version="1.7.1" />
     <PackageReference Include="AuroraLib.Core.Format" Version="1.0.4" />
-    <PackageReference Include="AuroraLib.Pixel" Version="1.5.3" />
-    <PackageReference Include="System.IO.Hashing" Version="10.0.11" />
+    <PackageReference Include="AuroraLib.Pixel" Version="1.5.4" />
+    <PackageReference Include="System.IO.Hashing" Version="10.0.12" />
   </ItemGroup>
   <ItemGroup>
     <None Update="icon.png">
